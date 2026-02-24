@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>7 Days to Browser – Debugged Version</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="blocker">
+    <div id="instructions">
+      <span style="font-size:40px">Click to play</span>
+      <br />
+      (WASD move • Space jump • Shift sprint • Mouse look<br />
+      Scroll wheel = change block • LMB break • RMB place • ESC unlock)
+    </div>
+  </div>
+
+  <div id="hud">
+    <div id="stats">Health: <span id="health">100</span> | Hunger: <span id="hunger">100</span> | Day: <span id="day">1</span></div>
+    <div id="hotbar">
+      <div class="slot" data-type="1">Dirt</div>
+      <div class="slot" data-type="2">Grass</div>
+      <div class="slot selected" data-type="3">Stone</div>
+      <div class="slot" data-type="4">Wood</div>
+      <div class="slot" data-type="5">Leaves</div>
+    </div>
+  </div>
+  <div id="crosshair">+</div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
